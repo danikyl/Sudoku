@@ -8,6 +8,8 @@
 
 int main(int argc, char *argv[])
 {
-    
+    MATRIX_ELEM **matrix=createMatrix();
+    solve(matrix);
+    printMatrix(matrix);
     return 0;
 }
