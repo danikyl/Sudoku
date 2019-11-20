@@ -5,19 +5,17 @@
 #ifndef _SUDOKU_
 #define _SUDOKU_
 
-#define lineN 16
-#define colN 16
+#define NSIZE 9
 
 typedef struct matrix_elem {
     char symbol;
-    int isSpot;
 } MATRIX_ELEM;
 
 void printMatrix(MATRIX_ELEM **matrix);
 
 MATRIX_ELEM **createMatrix();
 
-void solve(MATRIX_ELEM **matrix);
+int solve(MATRIX_ELEM **matrix, char *hexAlf);
 
 
 

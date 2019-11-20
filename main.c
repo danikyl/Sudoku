@@ -8,8 +8,9 @@
 
 int main(int argc, char *argv[])
 {
+    char hexAlf[17] = "0123456789ABCDEF";
     MATRIX_ELEM **matrix=createMatrix();
-    solve(matrix);
+    solve(matrix, hexAlf);
     printMatrix(matrix);
     return 0;
 }
