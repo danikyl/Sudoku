@@ -10,7 +10,9 @@ int main(int argc, char *argv[])
 {
     char hexAlf[17] = "0123456789ABCDEF";
     MATRIX_ELEM **matrix=createMatrix();
-    solve(matrix, hexAlf);
+    checkPossible(matrix, hexAlf);
+    findUniqueSolution(matrix, hexAlf);
+    solve(matrix);
     printMatrix(matrix);
     return 0;
 }
