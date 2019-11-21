@@ -23,6 +23,7 @@ int solve(MATRIX_ELEM **matrix);
 
 void findUniqueSolution(MATRIX_ELEM **matrix, char *alfaHex);
 
+void freeMatrix(MATRIX_ELEM **matrix);
 
 
 #endif

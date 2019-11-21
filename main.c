@@ -14,5 +14,6 @@ int main(int argc, char *argv[])
     findUniqueSolution(matrix, hexAlf);
     solve(matrix);
     printMatrix(matrix);
+    free(matrix);
     return 0;
 }

@@ -133,3 +133,13 @@ int solve(MATRIX_ELEM **matrix) {
     return 0;
 }
 
+void freeMatrix(MATRIX_ELEM **matrix) {
+    int i, j;
+    for (i=0; i<NSIZE; i++) {
+        for (j=0; j<NSIZE; j++) {
+            if (matrix[i][j].possibleValues) free(matrix[i][j].possibleValues);
+        }
+        free(matrix[i]);
+    }
+    free(matrix);
+}
