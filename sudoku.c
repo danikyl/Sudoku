@@ -1,6 +1,4 @@
 //Daniel De Marco Fucci
-//BSI 2019
-//11218639
 
 #include <sudoku.h>
 #include <stdlib.h>
@@ -9,10 +7,9 @@
 void printMatrix(MATRIX_ELEM **matrix) {
     int i, j;
     for (i=0; i<NSIZE; i++) {
-        for (j=0; j<NSIZE-1; j++) {
-            printf ("%c ", matrix[i][j].symbol);
+        for (j=0; j<NSIZE; j++) {
+            printf ("%c", matrix[i][j].symbol);
         }
-        printf ("%c", matrix[i][NSIZE-1].symbol);
         if (i<NSIZE-1)printf("\n");
     }
 }
